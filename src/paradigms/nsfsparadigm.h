@@ -30,6 +30,7 @@ class XkorNSFSParadigm : public XkorAbstractH2HParadigm
 			int baseAttacksInferior = opt.value("baseAttacksInferior").toInt();
 			double attackCoeffSuperior = opt.value("attackCoeffSuperior").toDouble();
 			double attackCoeffInferior = opt.value("attackCoeffInferior").toDouble();
+			double homeAdvValue = (homeAdvantage ? opt.value("homeAdvantage").toDouble() : 1);
 
 			int attacks;
 			if(skill > oppSkill)
